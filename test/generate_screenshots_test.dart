@@ -142,7 +142,8 @@ void main() {
           ),
         ),
       );
-      await tester.pumpAndSettle();
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 500));
       await saveScreenshot(
         tester: tester,
         boundaryKey: key,
@@ -177,7 +178,8 @@ void main() {
           ),
         ),
       );
-      await tester.pumpAndSettle();
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 500));
       await saveScreenshot(
         tester: tester,
         boundaryKey: key,
@@ -201,7 +203,8 @@ void main() {
           ),
         ),
       );
-      await tester.pumpAndSettle();
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 500));
 
       // Isi form agar terlihat terisi
       await tester.enterText(
@@ -344,7 +347,8 @@ void main() {
           ),
         ),
       );
-      await tester.pumpAndSettle();
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 500));
       await saveScreenshot(
         tester: tester,
         boundaryKey: key,
